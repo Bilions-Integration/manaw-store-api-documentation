@@ -43,6 +43,7 @@ export default {
   top: 50px;
   border-right: 2px solid #f9f9f9;
   overflow: auto;
+  padding-top: 30px;
 }
 .lists {
   display: flex;
@@ -66,7 +67,8 @@ export default {
 
 .list ul {
   margin-top: 10px;
-  margin-left: -5px;
+  margin-left: -45px;
+  list-style: none;
 }
 
 .list ul li {
@@ -77,6 +79,7 @@ export default {
 
 .list ul li a {
   color: #767676;
+  text-decoration: none;
 }
 
 .list ul li a.active {
@@ -85,6 +88,7 @@ export default {
 
 .list .single-a {
   color: #767676;
+  text-decoration: none;
 }
 
 .list .single-a.active {

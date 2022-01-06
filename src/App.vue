@@ -34,12 +34,10 @@ body {
   margin: 0;
   padding: 0;
   background: #f9f9f9;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.905);
 }
-
 .navbar {
   height: 60px;
   background: rgb(79 78 227);
@@ -83,4 +81,10 @@ body {
   max-width: 900px;
   margin: 0 auto;
 }
+
+.mr-3 {
+  margin-right: 10px;
+}
 </style>
+
+

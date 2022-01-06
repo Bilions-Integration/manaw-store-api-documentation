@@ -6,11 +6,6 @@ import routes from './routes'
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 
-import Vant from 'vant'
-import 'vant/lib/index.css'
-
-Vue.use(Vant)
-
 const router = new VueRouter({
   mode: 'history',
   routes,
