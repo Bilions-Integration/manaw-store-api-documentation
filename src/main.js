@@ -1,8 +1,23 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
+import routes from './routes'
 
+Vue.use(VueRouter)
 Vue.config.productionTip = false
 
+import Vant from 'vant'
+import 'vant/lib/index.css'
+
+Vue.use(Vant)
+
+const router = new VueRouter({
+  mode: 'history',
+  routes,
+  linkExactActiveClass: 'active',
+})
+
 new Vue({
-  render: h => h(App),
+  router,
+  render: (h) => h(App),
 }).$mount('#app')
