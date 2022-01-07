@@ -1,10 +1,9 @@
-import HomePage from './pages/Home'
 import DocumentationPage from './pages/DocumentationPage'
 
 let routes = [
   {
     path: '/',
-    component: HomePage,
+    component: DocumentationPage,
     meta: { auth: false },
   },
   {
