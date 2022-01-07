@@ -37,31 +37,39 @@ export default {
       setTimeout(() => {
         document.querySelectorAll("pre").forEach((node) => {
           hljs.highlightElement(node);
-
-          let btnText = "Copy";
-          let btnTextSuccess = "Copied";
-          // create a "copy" button
-          let copyBtn = document.createElement("button");
-          copyBtn.innerText = btnText;
-          copyBtn.classList.add("copy-btn");
-
-          setTimeout(() => {
-            node.prepend(copyBtn);
-          }, 500);
-          copyBtn.addEventListener("click", async () => {
-            // copy to clipboard
-            if (navigator.clipboard) {
-              let text = node.innerText;
-              await navigator.clipboard.writeText(text);
-            }
-            copyBtn.innerText = btnTextSuccess;
-
-            setTimeout(() => {
-              copyBtn.innerText = btnText;
-            }, 1000);
-          });
+          this.addCopyButton(node);
         });
       }, 10);
+    },
+
+    addCopyButton(node) {
+      let btnText = "Copy";
+      let btnTextSuccess = "Copied";
+      // create a "copy" button
+      let copyBtn = document.createElement("button");
+      copyBtn.innerText = btnText;
+      copyBtn.classList.add("copy-btn");
+
+      setTimeout(() => {
+        node.prepend(copyBtn);
+      }, 500);
+      copyBtn.addEventListener("click", async () => {
+        // copy to clipboard
+        if (navigator.clipboard) {
+          const clone = node.cloneNode(true);
+          const elems = clone.querySelectorAll(".copy-btn");
+          for (const elem of elems) {
+            elem.remove();
+          }
+          let text = clone.innerText;
+          await navigator.clipboard.writeText(text);
+        }
+        copyBtn.innerText = btnTextSuccess;
+
+        setTimeout(() => {
+          copyBtn.innerText = btnText;
+        }, 1000);
+      });
     },
   },
 };
