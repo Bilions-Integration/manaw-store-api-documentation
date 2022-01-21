@@ -4,7 +4,6 @@
   </div>
 </template>
 
-
 <script>
 import axios from "axios";
 import hljs from "highlight.js";
@@ -29,12 +28,9 @@ export default {
     async init() {
       this.html = "";
       this.page = this.$route.params.type ?? "introduction";
-      let res = await axios.get(
-        "https://api.manawstore.xyz/api/documentation",
-        {
-          params: { page: this.page },
-        }
-      );
+      let res = await axios.get("http://pos.test/api/documentation", {
+        params: { page: this.page },
+      });
       this.html = res.data.html;
 
       setTimeout(() => {

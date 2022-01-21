@@ -1,47 +1,115 @@
 export default [
-  { name: 'Introduction', path: '/' },
-  { name: 'Setup Credentials', path: '/page/setup-credential' },
-  { name: 'PHP SDK', path: '/page/php-sdk' },
-  { name: 'Node.js SDK', path: '/page/node-sdk' },
-  { name: '' },
+  { name: "Introduction", path: "/" },
+  { name: "Setup Credentials", path: "/page/setup-credential" },
+  { name: "PHP SDK", path: "/page/php-sdk" },
+  { name: "Node.js SDK", path: "/page/node-sdk" },
+  { name: "" },
   {
-    name: 'Product Category',
+    name: "Supplier",
     path: null,
     sub_lists: [
-      { name: 'Get category list', path: '/page/listing-category' },
-      { name: 'Create new category', path: '/page/create-category' },
-      { name: 'Update category', path: '/page/update-category' },
-      { name: 'Delete category', path: '/page/delete-category' },
+      { name: "Get supplier list", path: "/page/listing-supplier" },
+      { name: "Create new supplier", path: "/page/create-supplier" },
+      { name: "View supplier", path: "/page/view-supplier" },
+      { name: "Update supplier", path: "/page/update-supplier" },
+      { name: "Delete supplier", path: "/page/delete-supplier" },
     ],
   },
   {
-    name: 'Supplier',
+    name: "Customer",
     path: null,
     sub_lists: [
-      { name: 'Get supplier list', path: '/page/listing-supplier' },
-      { name: 'Create new supplier', path: '/page/create-supplier' },
-      { name: 'Update supplier', path: '/page/update-supplier' },
-      { name: 'Delete supplier', path: '/page/delete-supplier' },
+      { name: "Get customer list", path: "/page/listing-customer" },
+      { name: "Create new customer", path: "/page/create-customer" },
+      { name: "View customer", path: "/page/view-customer" },
+      { name: "Update customer", path: "/page/update-customer" },
+      { name: "Delete customer", path: "/page/delete-customer" },
     ],
   },
   {
-    name: 'Customer',
+    name: "Account",
     path: null,
     sub_lists: [
-      { name: 'Get customer list', path: '/page/listing-customer' },
-      { name: 'Create new customer', path: '/page/create-customer' },
-      { name: 'Update customer', path: '/page/update-customer' },
-      { name: 'Delete customer', path: '/page/delete-customer' },
+      { name: "Get account list", path: "/page/listing-account" },
+      { name: "Create new account", path: "/page/create-account" },
+      { name: "View account", path: "/page/view-account" },
+      { name: "Update account", path: "/page/update-account" },
+      { name: "Delete account", path: "/page/delete-account" },
     ],
   },
   {
-    name: 'Product',
+    name: "Product Category",
     path: null,
     sub_lists: [
-      { name: 'Get product list', path: '/page/listing-foo' },
-      { name: 'Create new product', path: '/page/create-foo' },
-      { name: 'Update product', path: '/page/update-foo' },
-      { name: 'Delete product', path: '/page/delete-foo' },
+      { name: "Get category list", path: "/page/listing-category" },
+      { name: "Create new category", path: "/page/create-category" },
+      { name: "View Product Category", path: "/page/view-category" },
+      { name: "Update category", path: "/page/update-category" },
+      { name: "Delete category", path: "/page/delete-category" },
     ],
   },
-]
+  {
+    name: "Product",
+    path: null,
+    sub_lists: [
+      { name: "Get product list", path: "/page/listing-product" },
+      { name: "View Product", path: "/page/view-product" },
+    ],
+  },
+  {
+    name: "Single Product",
+    path: null,
+    sub_lists: [
+      {
+        name: "Create single product",
+        path: "/page/create-single-product",
+      },
+
+      {
+        name: "Update single product",
+        path: "/page/update-single-product",
+      },
+
+      {
+        name: "Delete single product",
+        path: "/page/delete-single-product",
+      },
+    ],
+  },
+  {
+    name: "Group Product",
+    path: null,
+    sub_lists: [
+      {
+        name: "Create group product",
+        path: "/page/create-group-product",
+      },
+      {
+        name: "Update group product",
+        path: "/page/update-group-product",
+      },
+      {
+        name: "Delete group product",
+        path: "/page/delete-group-product",
+      },
+    ],
+  },
+  {
+    name: "Sub Product",
+    path: null,
+    sub_lists: [
+      {
+        name: "Create sub product",
+        path: "/page/create-sub-product",
+      },
+      {
+        name: "Update sub product",
+        path: "/page/update-sub-product",
+      },
+      {
+        name: "Delete sub product",
+        path: "/page/delete-sub-product",
+      },
+    ],
+  },
+];
