@@ -99,6 +99,10 @@ export default [
     path: null,
     sub_lists: [
       {
+        name: "Sub Product Listing",
+        path: "/page/listing-sub-product",
+      },
+      {
         name: "Create sub product",
         path: "/page/create-sub-product",
       },
