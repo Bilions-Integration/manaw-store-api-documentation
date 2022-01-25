@@ -116,4 +116,26 @@ export default [
       },
     ],
   },
+  {
+    name: "Single Product Option",
+    path: null,
+    sub_lists: [
+      {
+        name: "Product option List",
+        path: "/page/listing-single-product-option",
+      },
+      {
+        name: "Create product option",
+        path: "/page/create-single-product-option",
+      },
+      {
+        name: "Update product option",
+        path: "/page/update-single-product-option",
+      },
+      {
+        name: "Delete product option",
+        path: "/page/delete-single-product-option",
+      },
+    ],
+  },
 ];
