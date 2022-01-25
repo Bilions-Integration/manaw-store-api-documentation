@@ -99,7 +99,7 @@ export default [
     path: null,
     sub_lists: [
       {
-        name: "Sub Product Listing",
+        name: "Sub product listing",
         path: "/page/listing-sub-product",
       },
       {
@@ -121,7 +121,7 @@ export default [
     path: null,
     sub_lists: [
       {
-        name: "Product option List",
+        name: "Product option list",
         path: "/page/listing-single-product-option",
       },
       {
@@ -135,6 +135,28 @@ export default [
       {
         name: "Delete product option",
         path: "/page/delete-single-product-option",
+      },
+    ],
+  },
+  {
+    name: "Single Product Option Item",
+    path: null,
+    sub_lists: [
+      {
+        name: "Option item list",
+        path: "/page/listing-single-product-option-item",
+      },
+      {
+        name: "Create option item",
+        path: "/page/create-single-product-option-item",
+      },
+      {
+        name: "Update option item",
+        path: "/page/update-single-product-option-item",
+      },
+      {
+        name: "Delete option item",
+        path: "/page/delete-single-product-option-item",
       },
     ],
   },
